@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Figtree", sans-serif;
+  src: url(../assets/fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Midnight", sans-serif;
+  src: url(../assets/fonts/midnight-sans-rd-12-medium-trial.woff2);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Reckless", sans-serif;
+  src: url(../assets/fonts/RecklessCondensedS-TRIAL-Book.woff);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../assets/fonts/RobotoMono-Regular.woff2);
+  font-style: normal;
+}
+
+:root {
+  /* Color System */
+
+  --color-primary: ;
+  --color-secondry: ;
+  --clr-bg: #fbf9eb;
+  --clr-text: #000000;
+  --clr-nav-bg: #fffefb;
+
+  /* Typography */
+
+  --fs-100: ;
+  --fs-200: ;
+
+  /* Spacing Scale */
+
+  --space-100: ;
+  --space-200: ;
+
+  /* Radius System */
+
+  --radius-sm: ;
+  --radius-md: ;
+  --radius-lg: ;
+
+  /* Container Variable */
+
+  --container-width: 120rem;
+
+  /* Transition Variables */
+
+  --transition-normal: ;
+
+  /* Z-Index Scale */
+
+  --z-navbar: ;
+  --z-modal: ;
+}

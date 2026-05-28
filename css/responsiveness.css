@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  /* Header */
+
+  .nav-hamburger,
+  .nav-cart {
+    display: none;
+  }
+
+  .nav-part1 {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    font-size: 2.2rem;
+    width: 40%;
+  }
+
+  .nav-part1 h3 {
+    font-family: Reckless;
+    font-weight: 100;
+  }
+
+  .review {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2.5rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    width: 40%;
+  }
+
+  .nav-part2 h3 {
+    font-family: Roboto;
+    font-weight: 500;
+  }
+
+  .cart-icon svg {
+    width: 2.5rem;
+  }
+}

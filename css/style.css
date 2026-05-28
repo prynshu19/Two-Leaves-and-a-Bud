@@ -1,0 +1,60 @@
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  font-family: sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+}
+
+p {
+  max-width: 65ch;
+}
+
+.container {
+  max-width: min(90%, var(--container-width));
+}
+
+.section {
+  padding: 4rem 4rem;
+}
+
+/* Header */
+
+header {
+  position: relative;
+  border-bottom: 1px solid black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-nav-bg);
+  padding: 1rem 2.5rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.nav-part1,
+.nav-part2 {
+  display: none;
+}
+
+.nav-hamburger i {
+  font-size: 3.5rem;
+  font-weight: 100;
+}
+
+.nav-cart svg {
+  height: 5rem;
+}
