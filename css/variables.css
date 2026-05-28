@@ -54,6 +54,6 @@
 
   /* Z-Index Scale */
 
-  --z-navbar: ;
+  --z-navbar: 1000 ;
   --z-modal: ;
 }

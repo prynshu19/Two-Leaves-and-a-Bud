@@ -3,7 +3,6 @@ body {
   color: var(--clr-text);
   font-family: sans-serif;
   line-height: 1.5;
-  overflow-x: hidden;
 }
 
 h1,
@@ -20,7 +19,8 @@ p {
 }
 
 .container {
-  max-width: min(90%, var(--container-width));
+  width: min(90%, var(--container-width));
+  margin-inline: auto;
 }
 
 .section {
@@ -30,24 +30,29 @@ p {
 /* Header */
 
 header {
-  position: relative;
   border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: var(--z-navbar);
 }
 
 nav {
   display: flex;
+  flex: 1;
   justify-content: space-between;
   align-items: center;
   background-color: var(--clr-nav-bg);
   padding: 1rem 2.5rem;
-  position: sticky;
-  top: 0;
-  left: 0;
 }
 
 .nav-part1,
 .nav-part2 {
   display: none;
+}
+
+.nav-logo img {
+  height: auto;
 }
 
 .nav-hamburger i {
