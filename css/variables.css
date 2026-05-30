@@ -1,20 +1,20 @@
 @font-face {
-  font-family: "Figtree", sans-serif;
+  font-family: "Figtree";
   src: url(../assets/fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
   font-style: normal;
 }
 @font-face {
-  font-family: "Midnight", sans-serif;
+  font-family: "Midnight";
   src: url(../assets/fonts/midnight-sans-rd-12-medium-trial.woff2);
   font-style: normal;
 }
 @font-face {
-  font-family: "Reckless", sans-serif;
+  font-family: "Reckless";
   src: url(../assets/fonts/RecklessCondensedS-TRIAL-Book.woff);
   font-style: normal;
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   src: url(../assets/fonts/RobotoMono-Regular.woff2);
   font-style: normal;
 }
@@ -54,6 +54,6 @@
 
   /* Z-Index Scale */
 
-  --z-navbar: 1000 ;
+  --z-navbar: 1000;
   --z-modal: ;
 }

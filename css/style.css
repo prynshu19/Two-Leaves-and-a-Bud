@@ -15,7 +15,7 @@ h6 {
 }
 
 p {
-  max-width: 65ch;
+  max-width: 90ch;
 }
 
 .container {
@@ -30,11 +30,13 @@ p {
 /* Header */
 
 header {
-  border-bottom: 1px solid black;
-  position: sticky;
+  border-bottom: 0.1rem solid black;
+  position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: var(--z-navbar);
+  background-color: var(--clr-nav-bg);
 }
 
 nav {
@@ -42,7 +44,6 @@ nav {
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--clr-nav-bg);
   padding: 1rem 2.5rem;
 }
 
@@ -60,6 +61,73 @@ nav {
   font-weight: 100;
 }
 
-.nav-cart svg {
-  height: 5rem;
+/* Hero Section */
+main {
+  height: 100vh;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 3rem;
+  position: relative;
+  border-bottom: 0.1rem solid black;
+}
+
+.hero-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 90%;
+  position: absolute;
+  inset: 1;
+}
+
+.hero-content h1 {
+  font-size: clamp(6rem, 2rem + 4vh, 8.4rem);
+  color: #fff;
+  font-family: Reckless, sans-serif;
+  font-weight: 200;
+}
+
+.hero-content p {
+  font-size: clamp(1.8rem, 1rem + 0.5vw, 2rem);
+  font-family: Figtree, sans-serif;
+  color: #fff;
+  font-weight: 400;
+}
+
+.btn-primary {
+  font-family: Figtree, sans-serif;
+  font-size: clamp(1.8rem, 1.4rem + 0.5vw, 2.5rem);
+  padding: 1rem 6rem;
+  border-radius: 5rem;
+  color: #fff;
+  background-color: #2a2857;
+  border: none;
+  width: 100%;
+  border: 0.1rem solid var(--clr-text);
+  transition: background-color .3s linear;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  cursor: pointer;
+  color: var(--clr-text);
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

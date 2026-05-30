@@ -9,13 +9,13 @@
   .nav-part1 {
     display: flex;
     align-items: center;
-    gap: 3.5rem;
-    font-size: 2.2rem;
+    gap: clamp(2.5rem, 2rem + 1vw, 3.5rem);
   }
 
   .nav-part1 a {
     font-family: Reckless;
     font-weight: 100;
+    font-size: clamp(2.2rem, 1.5rem + 1vw, 2.5rem);
   }
 
   .review {
@@ -30,15 +30,35 @@
     justify-content: flex-end;
     gap: 2.5rem;
     text-transform: uppercase;
-    font-size: 1.1rem;
   }
 
   .nav-part2 a {
     font-family: Roboto;
-    font-weight: 500;
+    font-weight: 900;
+    font-size: clamp(1rem, 0.7rem + 0.5vw, 1.2rem);
   }
 
-  .cart-icon svg {
-    width: 2.5rem;
+  /* Hero Section */
+
+  .hero {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+  }
+
+  .hero-content {
+    left: 0;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    gap: 1rem;
+    padding-left: 3rem;
+    max-width: 40%;
+  }
+
+  .hero-content button {
+    width: fit-content;
   }
 }
